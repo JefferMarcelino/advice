@@ -16,10 +16,17 @@ body {
     background-color: #171817;
 }
 
-div {
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     padding: 20px;
     max-width: 500px;
+}
+
+div img {
+    width: 50px;
 }
 
 div p {
