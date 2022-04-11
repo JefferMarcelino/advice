@@ -12,13 +12,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #171817;
 }
 
 div {
     position: relative;
-    top: -50px;
     padding: 20px;
     max-width: 500px;
 }
