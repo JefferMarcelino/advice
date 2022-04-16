@@ -51,14 +51,27 @@ footer {
 }
 
 #btn-next {
+    margin: 30px;
     background-color: #8e24aa;
     color: #fff;
+    opacity: 1;
+    visibility: visible;
     width: 4.7em;
-   text-transform: uppercase;
+    text-transform: uppercase;
     height: 2.5em;
+    border-radius: 5px;
     cursor: pointer;
     border: none;
     outline: none;
     font-family: monospace;
     font-weight: bold;
+}
+
+#btn-next.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-next:hover {
+    filter: brightness(80%);
 }

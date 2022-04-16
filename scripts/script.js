@@ -9,7 +9,7 @@ adviceSlip.setAttribute("class", "advice");
 
 const image = document.querySelector("div img");
 
-
+const nextButton = document.querySelector("#btn-next")
 
 const showAdvice = (async function () {
   const doc = await (await adviceapi).json();
@@ -27,16 +27,18 @@ const showAdvice = (async function () {
 
     const textoArray = adviceRecv.split("");
     adviceSlip.innerHTML = " ";
-
-    textoArray.forEach(function (letra, i) {
+    
+    textoArray.forEach(function (letter, i) {
       setTimeout(function () {
-        adviceSlip.innerHTML += letra;
+        adviceSlip.innerHTML += letter;
+        if (i === (textoArray.length - 1)) {
+          nextButton.classList.remove("hide")
+        }
       }, 75 * i);
     });
+
+
   } catch (error) {
     console.log(doc);
   }
 })();
-
-
-
