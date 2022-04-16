@@ -1,5 +1,11 @@
 # Advice
 
+# Preview
+<p>
+  <img alt="Preview 1" src=".github/preview.gif">  
+</p>
+<br>
+
 ## 🚀 Technologies
 
 This project was developed with the following technologies:
