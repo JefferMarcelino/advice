@@ -2,7 +2,7 @@
 
 # Preview
 <p>
-  <img alt="Preview 1" src=".github/preview.gif">  
+  <img alt="Preview" src=".github/preview.gif">  
 </p>
 <br>
 
