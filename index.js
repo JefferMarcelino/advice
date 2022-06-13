@@ -28,7 +28,7 @@ const loadBasicStructure = () => {
     divProfile.classList.add("profile")
 
     const img = document.createElement("img")
-    img.setAttribute("src", "../images/avatar.svg")
+    img.setAttribute("src", "./images/avatar.svg")
 
     const paragraph = document.createElement("p")
     paragraph.innerText = "@Unknow"
@@ -66,7 +66,7 @@ const backgroungGeneretor = (limit=13, id) => {
         img = Math.floor(Math.random() * limit)
     }
     
-    sections[id-1].style.backgroundImage = `url("../images/${img}.jpg")`
+    sections[id-1].style.backgroundImage = `url("./images/${img}.jpg")`
 }
 
 observerLast.observe(lastMother)
