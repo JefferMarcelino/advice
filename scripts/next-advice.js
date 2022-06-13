@@ -1,4 +1,3 @@
-
 document.getElementById("btn-next").addEventListener("click", async (e) => {
   document.getElementById("btn-next").classList.add("hide")
   const adviceapi = fetch("https://api.adviceslip.com/advice");
@@ -6,9 +5,6 @@ document.getElementById("btn-next").addEventListener("click", async (e) => {
   try {
     const slip = doc.slip;
 
-    adviceId.innerHTML = `Advice ${slip.id}`;
-
-    container.appendChild(adviceId);
     container.appendChild(adviceSlip);
     var adviceRecv = slip.advice;
 

@@ -1,9 +1,6 @@
 const adviceapi = fetch("https://api.adviceslip.com/advice");
 const container = document.querySelector("div.text");
 
-const adviceId = document.createElement("p");
-adviceId.setAttribute("class", "num");
-
 const adviceSlip = document.createElement("p");
 adviceSlip.setAttribute("class", "advice");
 
@@ -16,9 +13,6 @@ const showAdvice = (async function () {
   try {
     const slip = doc.slip;
 
-    adviceId.innerHTML = `Advice ${slip.id}`;
-
-    container.appendChild(adviceId);
     container.appendChild(adviceSlip);
     var adviceRecv = slip.advice;
 
