@@ -1,0 +1,15 @@
+{
+  "name": "advice",
+  "version": "1.0.0",
+  "description": "A simple website that returns a random advice.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JefferMarcelino/advice.git"
+  },
+  "author": "Jeffer Marcelino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JefferMarcelino/advice/issues"
+  },
+  "homepage": "https://github.com/JefferMarcelino/advice#readme"
+}

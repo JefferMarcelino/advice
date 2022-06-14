@@ -7,17 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html {
-    scroll-snap-type: y proximity;
-}
-
 main {
-    scroll-snap-type: y proximity;
-    overflow: y;
-}
-
-.mother {
-    scroll-snap-align: center;
     height: 100vh;
     padding: 1rem;
     display: flex;
@@ -25,7 +15,7 @@ main {
     align-items: center;
     justify-content: space-around;
     background-image: linear-gradient(135deg, rgb(167, 113, 230), rgb(93, 7, 192));
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -47,15 +37,53 @@ section.container .profile {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
-div img {
+section.container .profile .img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+}
+
+section.container .profile .img::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    border: 2px solid rgb(216, 16, 206);
+    border-radius: 50%;
+    animation: grow 0.75s alternate infinite;
+}
+
+section.container .profile .img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(14, 0, 13);
+    border-radius: 50%;
+    animation: grow 1s alternate infinite;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+img {
     width: 50px;
 }
 
-div img.loading.hide {
+img.loading.hide {
     display: none;
 }
 
@@ -80,32 +108,9 @@ footer {
     top: 0;
 }
 
-#btn-next {
-    margin: 30px;
-    background-color: #8e24aa;
-    color: #fff;
-    opacity: 1;
-    visibility: visible;
-    width: 4.7em;
-    text-transform: uppercase;
-    height: 2.5em;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    font-family: monospace;
-    font-weight: bold;
-}
-
-#btn-next.hide {
-    opacity: 0;
-    visibility: hidden;
-}
-
-#btn-next:hover {
-    filter: brightness(80%);
-}
-
 footer {
     position: absolute;
+    top: 90vh;
+    left: 50vw;
+    transform: translateX(-50%);
 }

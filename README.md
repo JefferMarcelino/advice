@@ -24,7 +24,7 @@ A simple website that returns a random advice.
 
 <br>
 
-You can acess it by clicking [here](https://jeffermarcelino.github.io/advice/)
+You can acess it by clicking [here](https://advice-three.vercel.app/)
 
 <br>
 

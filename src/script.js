@@ -7,7 +7,8 @@ adviceSlip.setAttribute("class", "advice");
 const image = document.querySelector("div img.loading");
 
 const generateAdvice = (divText) => {
-  const adviceSlip = document.createElement("p");adviceSlip.classList.add("advice")
+  const adviceSlip = document.createElement("p")
+  adviceSlip.classList.add("advice")
   divText.appendChild(adviceSlip)
 
   fetch("https://api.adviceslip.com/advice")
